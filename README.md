@@ -42,7 +42,6 @@ O projeto foi estruturado seguindo boas práticas modernas de desenvolvimento An
 - Gradle
 - Android Studio
 - Material Design
-- Google Mobile Ads SDK
 
 ---
 
