@@ -1,21 +1,63 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+
+# Personal Finance App
+
+Aplicativo Android de Finanças Pessoais desenvolvido com foco em organização financeira, produtividade e experiência mobile moderna.
+
+Interface nativa Android, arquitetura escalável e performance otimizada para gerenciamento financeiro no dia a dia.
+
 </div>
 
-# Run and deploy your AI Studio app
+---
 
-This contains everything you need to run your app locally.
+# Sobre o Projeto
 
-View your app in AI Studio: https://ai.studio/apps/51c812a1-f85b-44fc-a346-b6f4ffe389fd
+Personal Finance App é um aplicativo Android de finanças pessoais criado para auxiliar usuários no controle financeiro de maneira simples, intuitiva e eficiente.
 
-## Run Locally
+O aplicativo permite gerenciamento de informações financeiras com foco em:
 
-**Prerequisites:**  [Android Studio](https://developer.android.com/studio)
+- organização financeira;
+- controle de gastos;
+- gestão financeira pessoal;
+- produtividade;
+- experiência de usuário fluida;
+- performance nativa Android;
+- escalabilidade para futuras funcionalidades.
 
+O projeto foi estruturado seguindo boas práticas modernas de desenvolvimento Android, priorizando:
 
-1. Open Android Studio
-2. Select **Open** and choose the directory containing this project
-3. Allow Android Studio to fix any incompatibilities as it imports the project.
-4. Create a file named `.env` in the project directory and set `GEMINI_API_KEY` in that file to your Gemini API key (see `.env.example` for an example)
-5. Remove this line from the app's `build.gradle.kts` file: `signingConfig = signingConfigs.getByName("debugConfig")`
-6. Run the app on an emulator or physical device
+- arquitetura modular;
+- manutenção simplificada;
+- código limpo;
+- separação de responsabilidades;
+- reutilização de componentes;
+- escalabilidade.
+
+---
+
+# Tecnologias Utilizadas
+
+- Kotlin
+- Android SDK
+- Gradle
+- Android Studio
+- Material Design
+- Google Mobile Ads SDK
+
+---
+
+# Arquitetura do Projeto
+
+A aplicação segue uma estrutura modular organizada para facilitar manutenção e evolução contínua do código.
+
+```txt
+app/
+├── ui/
+├── components/
+├── screens/
+├── services/
+├── data/
+├── models/
+├── repository/
+├── utils/
+└── ads/
