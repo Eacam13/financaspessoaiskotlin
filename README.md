@@ -1,62 +1,128 @@
-<div align="center">
+# 💰 Finanças Pessoais
 
-# Personal Finance App
+Aplicativo Android nativo desenvolvido em **Kotlin** para gerenciamento de finanças pessoais. Utilize esta ferramenta para acompanhar suas despesas, receitas e controlar melhor seu orçamento.
 
-Aplicativo Android de Finanças Pessoais desenvolvido com foco em organização financeira, produtividade e experiência mobile moderna.
+## 📋 Características
 
-Interface nativa Android, arquitetura escalável e performance otimizada para gerenciamento financeiro no dia a dia.
+- ✅ Gerenciamento de receitas e despesas
+- ✅ Interface moderna com Jetpack Compose
+- ✅ Armazenamento local com Room Database
+- ✅ Requisições HTTP com Retrofit
+- ✅ Testes unitários e de UI automatizados
+- ✅ Arquitetura escalável e testável
 
-</div>
+## 🛠️ Tecnologias
 
----
+- **Linguagem**: Kotlin 100%
+- **UI**: Jetpack Compose & Material Design 3
+- **Banco de Dados**: Room Database
+- **Networking**: Retrofit + OkHttp
+- **Serialização**: Moshi
+- **Corrotinas**: Kotlin Coroutines
+- **Arquitetura**: MVVM com ViewModel
+- **Testes**: JUnit, Roborazzi, Robolectric
 
-# Sobre o Projeto
+## 📋 Requisitos
 
-Personal Finance App é um aplicativo Android de finanças pessoais criado para auxiliar usuários no controle financeiro de maneira simples, intuitiva e eficiente.
+- Android Studio (versão recente)
+- Android SDK 24+ (compileSdk 36)
+- Java 11+
 
-O aplicativo permite gerenciamento de informações financeiras com foco em:
+## 🚀 Como Executar Localmente
 
-- organização financeira;
-- controle de gastos;
-- gestão financeira pessoal;
-- produtividade;
-- experiência de usuário fluida;
-- performance nativa Android;
-- escalabilidade para futuras funcionalidades.
+### 1. Abrir o Projeto
+```bash
+1. Abra o Android Studio
+2. Clique em "Open" (Abrir)
+3. Selecione o diretório do projeto
+4. Aguarde o Android Studio sincronizar o Gradle
+```
 
-O projeto foi estruturado seguindo boas práticas modernas de desenvolvimento Android, priorizando:
+### 2. Configurar Variáveis de Ambiente
 
-- arquitetura modular;
-- manutenção simplificada;
-- código limpo;
-- separação de responsabilidades;
-- reutilização de componentes;
-- escalabilidade.
+Crie um arquivo `.env` na raiz do projeto:
 
----
+```env
+# Adicione suas chaves de API conforme necessário
+# Exemplo: GEMINI_API_KEY=sua_chave_aqui
+```
 
-# Tecnologias Utilizadas
+Veja o arquivo `.env.example` para um template de configuração.
 
-- Kotlin
-- Android SDK
-- Gradle
-- Android Studio
-- Material Design
+### 3. Configurar Build Local (Debug)
 
----
+Se necessário, remova ou ajuste a configuração de assinatura de debug em `app/build.gradle.kts`:
 
-# Arquitetura do Projeto
+```kotlin
+// Se tiver problemas, pode remover ou comentar:
+// signingConfig = signingConfigs.getByName("debugConfig")
+```
 
-A aplicação segue uma estrutura modular organizada para facilitar manutenção e evolução contínua do código.
+### 4. Executar o App
 
-```txt
+```bash
+# Em um emulador ou dispositivo físico conectado
+1. Clique em "Run" (ou pressione Shift + F10)
+2. Selecione o emulador ou dispositivo
+3. Aguarde a compilação e instalação
+```
+
+## 📁 Estrutura do Projeto
+
+```
 app/
-├── ui/
-├── components/
-├── screens/
-├── services/
-├── data/
-├── models/
-├── repository/
-├── utils/
-└── ads/
+├── src/
+│   ├── main/
+│   │   ├── java/com/aistudio/financaspessoais/
+│   │   ├── res/
+│   │   └── AndroidManifest.xml
+│   └── test/
+│       └── Testes unitários
+├── build.gradle.kts
+└── ...
+```
+
+## 🧪 Testes
+
+O projeto inclui testes automatizados:
+
+```bash
+# Executar testes unitários
+./gradlew test
+
+# Executar testes de UI com Compose
+./gradlew connectedAndroidTest
+
+# Gerar snapshots com Roborazzi
+./gradlew testDebug
+```
+
+## 🔒 Configuração de Release
+
+Para gerar um build de release, você precisará:
+
+1. Configurar as variáveis de ambiente:
+   - `KEYSTORE_PATH`: Caminho para o keystore
+   - `STORE_PASSWORD`: Senha do keystore
+   - `KEY_PASSWORD`: Senha da chave
+
+2. Executar:
+   ```bash
+   ./gradlew assembleRelease
+   ```
+
+## 🤝 Contribuindo
+
+Sinta-se livre para abrir issues e pull requests com melhorias!
+
+## 📝 Licença
+
+Este projeto é licenciado sob [Adicione a licença aqui].
+
+## 📞 Contato
+
+Para dúvidas ou sugestões, abra uma [issue](https://github.com/Eacam13/financaspessoaiskotlin/issues).
+
+---
+
+**Desenvolvido com ❤️ em Kotlin**
