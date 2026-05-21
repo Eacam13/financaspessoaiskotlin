@@ -117,7 +117,7 @@ Sinta-se livre para abrir issues e pull requests com melhorias!
 
 ## 📝 Licença
 
-Este projeto é licenciado sob [Adicione a licença aqui].
+Este projeto é licenciado sob a licença MIT.
 
 ## 📞 Contato
 
